@@ -17,14 +17,15 @@
 
 # ispubot 
 
-* ispubot Twitter 
-* Telegram version 
+* Twitter version [http://twitter.com/ispubot](@ispubot)
+* Telegram version [https://telegram.me/ispubot](ispubot Telegram)
+* Whatsapp version (on dev)
 
 `are authored by Vicky Vernando Dasta`
 
 # THANKS TO
 
-*  YULAN YULIANTY
+*  `YULAN YULIANTY`
 *  HISAM SETIAWAN
 *  PREDI LINUXER
 *  BENNY PUTRA
