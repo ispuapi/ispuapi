@@ -1,1 +1,31 @@
+# Idea 
 
+`Vicky Vernando Dasta (vickydasta)`
+
+# ispuapi Python
+
+* Vicky Vernando Dasta
+* Jufianto Hendri
+
+# ispuapi PHP
+
+* Gandhi Wibowo
+
+# infoispu.org 
+
+* Gandhi Wibowo
+
+# ispubot 
+
+* ispubot Twitter 
+* Telegram version 
+
+`are authored by Vicky Vernando Dasta`
+
+# THANKS TO
+
+*  YULAN YULIANTY
+*  HISAM SETIAWAN
+*  PREDI LINUXER
+*  BENNY PUTRA
+*  /etc/
