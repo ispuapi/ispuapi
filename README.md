@@ -23,6 +23,8 @@ ispuapi adalah API Python untuk information retreival terhadap data terkait ISPU
 >> plt.show()
 ```
 
+![hasil plotting](/img/img.png)
+
 # Author
 
 - Vicky Vernando Dasta
