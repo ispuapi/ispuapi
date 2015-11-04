@@ -24,4 +24,4 @@ ispuapi adalah API Python untuk information retreival terhadap data terkait ISPU
 
 # Author
 
-- Vicky Vernando Dasta
+Vicky Vernando Dasta
