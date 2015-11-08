@@ -11,10 +11,10 @@ some functions still buggy or the data is not entirely valid except
 for Pekanbaru.
 
 - installation
-** `$ sudo pip -r requirements.txt`
-** `$ git clone https://github.com/vickydasta/ispuapi`
-** `$ pip install -e api`
-** `$ python ispuapi.py`
+* `$ sudo pip -r requirements.txt`
+* `$ git clone https://github.com/vickydasta/ispuapi`
+* `$ pip install -e api`
+* `$ python ispuapi.py`
 
 a matplotlib window should appears after the scrapper fetch
 the needed data from the source and plot the data
