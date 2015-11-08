@@ -1,14 +1,19 @@
 # Tentang ISPUAPI Python
 
-ISPUAPI - (ISPU + API)
-ISPU -> (Indeks Standar Polusi Udara) + API (Application Programming Interface)
+## ISPUAPI - (ISPU + API)
+### ISPU -> (Indeks Standar Polusi Udara) + API (Application Programming Interface)
+
+```
 ispuapi adalah API Python untuk information retreival terhadap data terkait ISPU (PM10) di kota Pekanbaru.
+```
 
 # Instalasi
 
-- anyone willing to help me? :3
+- not yet written :P
 
 # HOWTO
+
+- howto using ispuapi
 
 ```
 >> import ispuapi.ispuapi
@@ -20,8 +25,14 @@ ispuapi adalah API Python untuk information retreival terhadap data terkait ISPU
 >> plt.show()
 ```
 
-![hasil plotting](/img/img.png)
+- howto connect to mysql
+
+```
+>> import enginx
+>> 
+
+```
 
 # Author
 
-vickydasta
+- Vicky Vernando Dasta
