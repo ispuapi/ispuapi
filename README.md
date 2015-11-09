@@ -1,33 +1,18 @@
-# Tentang ISPUAPI Python
+# ispuapi
 
-## ISPUAPI - (ISPU + API)
-### ISPU -> (Indeks Standar Polusi Udara) + API (Application Programming Interface)
+ISPUAPI (ISPU+API)
+Appliaction Programming Interface
+for PM10 data retreival on current location in Indonesia.
+it is defaultly retreive PM10 data for Pekanbaru.
+data retreival for other locations is still under development
+some functions still buggy or the data is not entirely valid except
+for Pekanbaru.
 
-```
-ispuapi adalah API Python untuk information retreival terhadap data terkait ISPU (PM10) di kota Pekanbaru.
-```
+# license
 
-# Instalasi
+MIT
 
-- not yet written :P
+# author
 
-# HOWTO
+Vicky Vernando Dasta
 
-- howto using ispuapi
-
-
-```
->> import ispuapi.ispuapi
->> pku = ispuapi.aqi('pku') # dapatkan data air quality indeks berdasarkan kode kota
->> import matplotlib.pyplot as plt # modul plott
-- howto connect to mysql
-
-```
->> import enginx
->> 
-
-```
-
-# Author
-
-- Vicky Vernando Dasta
