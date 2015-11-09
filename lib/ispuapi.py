@@ -28,7 +28,6 @@ import sys
 # ispuapi modules
 
 try:
-    import brain.brain as brain
     import cleaner
 except ImportError:
     raise ImportError('ispuapi modules are not installed properly!')
@@ -264,19 +263,9 @@ def kotasigntoword(kota):
 
 def getupdate(data):
 
-
     """
     get the latest update
     """
     return data[-1]
 
-def main():
-    import matplotlib.pyplot as plt
-    plt.plot(aqi('pku'))
-    plt.xlabel('waktu')
-    plt.ylabel('Tingkat PM10')
-    plt.show()
 
-if __name__ == '__main__':
-    print 'running test'
-    main()
