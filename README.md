@@ -15,7 +15,4 @@ MIT
 # author
 
 Vicky Vernando Dasta
-<<<<<<< HEAD
 
-=======
->>>>>>> 8318b5b4a15e686a0d2b42f2fba724b7cb7c5b1b
