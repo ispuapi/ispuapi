@@ -8,8 +8,8 @@ __author__ = 'vickydasta'
 
 try:
     from lib.ispuapi import aqi
-except:
-    print ''
+except ImportError:
+    print "ispuapi is not on this dir, see doc/README.md"
 
 import matplotlib.pyplot as plt
 
