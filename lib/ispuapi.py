@@ -260,12 +260,24 @@ def kotasigntoword(kota):
     return name
 
 
-
 def getupdate(data):
 
     """
     get the latest update
     """
     return data[-1]
+
+
+def valid(sign, data):
+    
+    '''
+    check for data validity
+    the index[x] of the scrapped data
+    is alwaysly changes by the host,
+    and it's affects the parsed data
+    when aqi(citycode) called.
+    '''
+
+    pass
 
 

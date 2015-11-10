@@ -23,6 +23,3 @@ plt.plot(data)
 plt.xlabel('Waktu (dalam satuan Jam)')
 plt.ylabel('Tingkat PM10 (dalam satuan ugram/m3')
 plt.show()
-
-
-
