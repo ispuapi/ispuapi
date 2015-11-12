@@ -40,11 +40,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE
 
 '''
+
+
 import urllib2
 import re
 from bs4 import BeautifulSoup
-import brain
-import cleaner
 
 class kb:
     # basis pengetahuan
@@ -55,7 +55,7 @@ class kb:
 def getsoup(url):
     return BeautifulSoup(urllib2.urlopen(url))
 
-def getAqi(daerah):
+def getDataAqi(daerah):
     if daerah.lower() not in kb.db_kota:
         raise Exception('data %s tidak ditemukan di basis pengetahuan'%daerah)
     soup = getsoup(kb.aqicn+daerah)
@@ -65,7 +65,7 @@ def getAqi(daerah):
         raise Exception('data %s tidak ditemukan di database aqicn.org'%daerah)
     return data_clean
 
-def getaqi(daerah):
+def getdataaqi(daerah):
     soup = BeautifulSoup(urllib2.urlopen('http://aqicn.org/city/indonesia/'+daerah))
     parse_data = soup.find_all("td", {"id" : re.compile('^cur_')})
     data_clean = [tag.text for tag in soup.find_all("td")]
@@ -79,11 +79,8 @@ def getdatabmkg():
     data_clean = [tag.text for tag in soup.find_all('div')]
     return data_clean
 
-def getDataBLH():
+def getdatablh():
     soup = BeautifulSoup(urllib2.urlopen('http://www.blh.pekanbaru.go.id/index.php'))
     parse_data = soup.find_all("td", {"id" : re.compile('^span')})
     data_clean = [tag.text for tag in soup.find_all("td")]
     return data_clean
-
-def aqi(daerah):
-    return brain.getdataispu(cleaner.tolatin1(cleaner.removegarbage(brain.getdata(daerah, getdatabmkg()))).split())
