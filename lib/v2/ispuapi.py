@@ -64,7 +64,7 @@ def getdataispu(data):
     return data_fix
 
 
-def kotasigntoword(kota):
+def CityCodeToName(kota):
 
     kota = kota.lower()
 
@@ -119,11 +119,11 @@ def getpm10(lokasi, data):
     >>> datapku = getdata('pku', ispuapi.getdatabmkg())
     '''
 
-    lok = lokasi.lower()
+    lok = CityCodeToName(lokasi.lower())
 
     if lok == 'pku' or lok == 'pekanbaru':
         try:
-            if valid(lok, data[39]) == True:
+            if valid(lok, data[39]):
                 val = data[39]
             else:
                 val = None
@@ -169,18 +169,24 @@ def getpm10(lokasi, data):
 
     elif lok == 'smr' or lok == 'samarinda':
         try:
-            val = data[109]
+            if valid(data[109]):
+                val = data[109]
+            else:
+                val = None
         except IndexError:
-            raise IndexError('%s tidak terdaftar dalam basis pengetahuan'%lok)
+            val = None
 
     elif lok == 'plk' or lok == 'palangkaraya':
         try:
-            val = data[112]
+            if valid(lok, data[112]):
+                val = data[112]
+            else:
+                val = None
         except IndexError:
-            raise IndexError('%s tidak terdaftar dalam basis pengetahuan'%lok)
+            val = None
 
     else:
-        raise Exception('%s tidak ada dalam basis pengetahuan!'%lok)
+        val = None
 
     return val
 
