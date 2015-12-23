@@ -45,6 +45,7 @@ import re
 from bs4 import BeautifulSoup
 import brain
 import cleaner
+import matplotlib.pyplot as plt
 
 class kb:
     # basis pengetahuan
@@ -87,3 +88,10 @@ def getDataBLH():
 
 def aqi(daerah):
     return brain.getdataispu(cleaner.tolatin1(cleaner.removegarbage(brain.getdata(daerah, getdatabmkg()))).split())
+
+if __name__ == '__main__':
+    print 'running test'
+    plt.plot(aqi('pku'))
+    plt.xlabel('Waktu')
+    plt.ylabel('Tingkat PM10 dalam ugram/m3')
+    plt.show()
